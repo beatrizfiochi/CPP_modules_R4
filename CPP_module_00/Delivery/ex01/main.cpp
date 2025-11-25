@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 10:52:12 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/11/25 14:07:46 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/11/25 17:32:57 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,13 @@ int	main()
 		{
 			phonebook.addContact();
 			std::cout << "Contact added" << std::endl;
+		}
+		else if (command == "SEARCH")
+			phonebook.searchContact();
+		else if (command == "EXIT")
+		{
+			std::cout << "Exiting phonebook..." << std::endl;
+			break ;
 		}
 		else if (command.empty())
 			continue;

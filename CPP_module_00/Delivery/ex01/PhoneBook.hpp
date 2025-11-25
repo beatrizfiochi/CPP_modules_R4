@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 11:35:28 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/11/25 16:11:38 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/11/25 18:03:21 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,9 @@ class PhoneBook{
 		void	addContact();
 		bool	addInfo(std::string &info, std::string infoName, bool isPhoneNum);
 		bool	checkInput(std::string &str, bool isPhoneNum);
+		void	searchContact() const;
+		void	printList() const;
+		void	printInfo(std::string &str) const;
 	private:
 		int	index;
 		int	n_contacts;
