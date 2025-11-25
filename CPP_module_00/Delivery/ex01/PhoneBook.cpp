@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 10:54:26 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/11/25 16:12:48 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/11/25 17:28:45 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@
 #include <cstdlib>
 #include <cctype>
 
-// constructor
+// Constructor
 PhoneBook::PhoneBook()
 {
 	this->index = 0;
 	this->n_contacts = 0;
 }
 
-// destructor
+// Destructor
 PhoneBook::~PhoneBook()
 {
 }
@@ -79,6 +79,11 @@ void	PhoneBook::addContact()
 	while (!addInfo(darkestSecret, "darkest secret", false)) {}
 	this->index++;
 	this->n_contacts++;
+	this->contacts[this->index].setFirstName(firstName);
+	this->contacts[this->index].setLastName(lastName);
+	this->contacts[this->index].setNickname(nickname);
+	this->contacts[this->index].setPhoneNumber(phoneNumber);
+	this->contacts[this->index].setDarkestSecret(darkestSecret);
 	if (this->index == 8)
 		this->index = 0;
 	if (this->n_contacts > 8)
