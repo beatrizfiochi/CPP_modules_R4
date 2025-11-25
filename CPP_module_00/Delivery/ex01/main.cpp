@@ -6,13 +6,14 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 10:52:12 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/11/06 18:39:04 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/11/25 14:07:46 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
 #include <string>
 #include <iostream>
+#include <cstdlib>
 
 int	main()
 {
@@ -27,13 +28,12 @@ int	main()
 		if (command == "ADD")
 		{
 			phonebook.addContact();
-			std:cout << "Contact added" << std::endl;
+			std::cout << "Contact added" << std::endl;
 		}
 		else if (command.empty())
 			continue;
 		else
 			std::cout << "Invalid command" << std::endl;
-
 	}
 
 	return (0);
