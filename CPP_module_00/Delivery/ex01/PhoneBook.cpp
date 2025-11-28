@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 10:54:26 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/11/25 19:08:13 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/11/28 14:08:38 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,6 +129,8 @@ void	PhoneBook::printList() const
 
 bool	isNumber(const std::string &str)
 {
+	if (str.empty())
+		return (false);
 	for (size_t i = 0; i < str.length(); i++)
 	{
 		if (str[i] < '0' || str[i] > '9')
@@ -166,5 +168,3 @@ void	PhoneBook::searchContact() const
 	std::cout << "Phone number: " << this->contacts[input_index - 1].getPhoneNumber() << std::endl;
 	std::cout << "Darkest secret: " << this->contacts[input_index - 1].getDarkestSecret() << std::endl;
 }
-
-
