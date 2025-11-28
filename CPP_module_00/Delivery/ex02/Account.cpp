@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 16:21:56 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/11/28 12:42:00 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/11/28 12:58:55 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,33 @@ Account::~Account(void)
 	_displayTimestamp();
 	std::cout << "index:" << _accountIndex << ";amount:" << checkAmount() << ";closed" << std::endl;
 }
+int Account::getNbAccounts(void)
+{
+	return (_nbAccounts);
+}
+
+int Account::getTotalAmount(void)
+{
+	return (_totalAmount);
+}
+
+int Account::getNbDeposits(void)
+{
+	return (_totalNbDeposits);
+}
+
+int Account::getNbWithdrawals(void)
+{
+	return (_totalNbWithdrawals);
+}
+void Account::displayAccountsInfos(void)
+{
+	_displayTimestamp();
+	std::cout << "accounts:" << getNbAccounts() << ";total:"
+		<< getTotalAmount() << ";deposits:"
+		<< getNbDeposits() << ";withdrawals:"
+		<< getNbWithdrawals() << std::endl;
+}
 
 int Account::checkAmount(void) const
 {
@@ -61,5 +88,6 @@ int main(void)
     Account a(1000);
     Account b(500);
     Account c(42);
+	Account::displayAccountsInfos();
 	return (0);
 }
