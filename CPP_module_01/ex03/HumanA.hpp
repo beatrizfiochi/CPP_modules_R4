@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/21 18:33:42 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/12/22 11:16:48 by bfiochi-         ###   ########.fr       */
+/*   Created: 2025/12/22 10:35:35 by bfiochi-          #+#    #+#             */
+/*   Updated: 2025/12/22 11:17:43 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
-#include <iostream>
-#include <string>
+#ifndef HUMANA_HPP
+# define HUMANA_HPP
 
-//Constructor
-// with initializer list (non static variables)
-Weapon::Weapon(const std::string newType) : type(newType) {}
+# include "Weapon.hpp"
+# include <iostream>
+# include <string>
 
-// Destructor
-Weapon::~Weapon(void) {}
-
-const std::string &Weapon::getType(void) const
+class HumanA
 {
-	return type;
-}
+	public:
+		HumanA(std::string newName, Weapon &newWeapon);
+		~HumanA(void);
+		void attack(void) const;
+	private:
+		std::string name;
+		Weapon	&weapon;
+};
 
-void Weapon::setType(std::string newType)
-{
-	type = newType;
-}
+#endif

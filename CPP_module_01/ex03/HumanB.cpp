@@ -1,32 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/21 18:33:42 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/12/22 11:16:48 by bfiochi-         ###   ########.fr       */
+/*   Created: 2025/12/22 10:48:30 by bfiochi-          #+#    #+#             */
+/*   Updated: 2025/12/22 11:19:52 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
+#include "HumanB.hpp"
 #include <iostream>
 #include <string>
 
 //Constructor
 // with initializer list (non static variables)
-Weapon::Weapon(const std::string newType) : type(newType) {}
+HumanB::HumanB(std::string newName) :
+	name(newName), weapon(NULL) {}
 
 // Destructor
-Weapon::~Weapon(void) {}
+HumanB::~HumanB(void) {}
 
-const std::string &Weapon::getType(void) const
+void HumanB::attack(void) const
 {
-	return type;
+	if (weapon)
+		std::cout << name << " attacks with their " << weapon->getType() << std::endl;
+	else
+		std::cout << name << " is unarmed" << std::endl;
 }
 
-void Weapon::setType(std::string newType)
+void HumanB::setWeapon(Weapon &newWeapon)
 {
-	type = newType;
+	weapon = &newWeapon;
 }

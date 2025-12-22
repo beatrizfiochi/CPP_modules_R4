@@ -1,39 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/21 18:33:17 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/12/22 11:21:24 by bfiochi-         ###   ########.fr       */
+/*   Created: 2025/12/22 10:41:00 by bfiochi-          #+#    #+#             */
+/*   Updated: 2025/12/22 11:18:29 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 #include "HumanA.hpp"
-#include "HumanB.hpp"
+#include <iostream>
+#include <string>
 
-int main(void)
+//Constructor
+// with initializer list (non static variables)
+HumanA::HumanA(std::string newName, Weapon &newWeapon) :
+	name(newName), weapon(newWeapon) {}
+
+// Destructor
+HumanA::~HumanA(void) {}
+
+void HumanA::attack(void) const
 {
-	{
-		Weapon club = Weapon("crude spiked club");
-		HumanA bob("Bob", club);
-		bob.attack();
-		club.setType("some other type of club");
-		bob.attack();
-	}
-	{
-		Weapon club = Weapon("crude spiked club");
-		HumanB jim("Jim");
-		jim.attack();
-		jim.setWeapon(club);
-		jim.attack();
-		club.setType("some other type of club");
-		jim.attack();
-	}
-	return 0;
+	std::cout << name << " attacks with their " << weapon.getType() << std::endl;
 }
-
-
-
