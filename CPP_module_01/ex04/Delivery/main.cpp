@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 12:10:59 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/12/22 14:04:03 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/12/27 10:41:56 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,8 @@ static int replace (const std::string &filename,
 		while ((pos = line.find(s1, pos)) != std::string::npos)
 		{
 			line.erase(pos, s1.length());
-            line.insert(pos, s2);
-            pos += s2.length();
+			line.insert(pos, s2);
+			pos += s2.length();
 		}
 		outputFile << line << std::endl;
 	}
