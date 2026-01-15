@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 19:46:54 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/01/13 20:18:00 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/01/15 15:13:14 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,12 @@ int main(void)
     std::cout << "b is " << b.toInt() << " as integer" << std::endl;
     std::cout << "c is " << c.toInt() << " as integer" << std::endl;
     std::cout << "d is " << d.toInt() << " as integer" << std::endl;
+    
+    // std::cout << std::endl;
+    // std::cout << "a is " << a.toFloat() << " as float" << std::endl;
+    // std::cout << "b is " << b.toFloat() << " as float" << std::endl;
+    // std::cout << "c is " << c.toFloat() << " as float" << std::endl;
+    // std::cout << "d is " << d.toFloat() << " as float" << std::endl;
     
     return (0);
 }
