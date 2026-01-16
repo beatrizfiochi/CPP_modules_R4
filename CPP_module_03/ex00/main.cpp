@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 14:14:24 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/01/16 14:52:23 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/01/16 15:01:04 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int main(void)
 
     std::cout << "------------------------TEST 4------------------------" << std::endl;
     d.status();
-    d.takeDamage(10);
+    d.takeDamage(11);
     d.attack("target3");
     d.status();
     d.beRepaired(5);
