@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 15:10:30 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/01/20 13:42:21 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/01/20 14:24:59 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include "ClapTrap.hpp"
 # include <iostream>
+# include <string>
 
 class ScavTrap : public ClapTrap
 {
