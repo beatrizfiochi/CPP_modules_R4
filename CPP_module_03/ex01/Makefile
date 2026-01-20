@@ -6,11 +6,11 @@
 #    By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/16 15:09:58 by bfiochi-          #+#    #+#              #
-#    Updated: 2026/01/16 15:10:17 by bfiochi-         ###   ########.fr        #
+#    Updated: 2026/01/20 13:49:15 by bfiochi-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ClapTrap
+NAME = ScavTrap
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -rf

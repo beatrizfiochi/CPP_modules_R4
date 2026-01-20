@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 15:09:52 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/01/16 15:11:11 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/01/20 14:10:48 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,54 +17,54 @@
 
 int main(void)
 {
-    ClapTrap    a;
-    ClapTrap    b("Beatriz");
-    ClapTrap    c(b);
-    ClapTrap    d;
+    ScavTrap    a("Beatriz");
+    ScavTrap    b(a);
+    ScavTrap    c;
+    ScavTrap    d("Daniel");
 
-    d = b;
+    c = a;
     std::cout << std::endl;
 
     std::cout << "------------------------TEST 1------------------------" << std::endl;
+    a.attack("target1");
     a.status();
     std::cout << std::endl;
 
     std::cout << "------------------------TEST 2------------------------" << std::endl;
-    b.attack("target1");
+    b.attack("target2");
+    b.status();
+    b.beRepaired(5);
+    b.guardGate();
+    std::cout << "original:" << std::endl;
+    a.status();
+    std::cout << "deep copy:" << std::endl;
     b.status();
     std::cout << std::endl;
 
     std::cout << "------------------------TEST 3------------------------" << std::endl;
-    c.attack("target2");
     c.status();
-    c.beRepaired(5);
-    std::cout << "original:" << std::endl;
-    b.status();
-    std::cout << "deep copy:" << std::endl;
+    c.takeDamage(110);
+    c.attack("target3");
+    c.status();
+    c.beRepaired(50);
+    c.guardGate();
+    c.status();
+    c.takeDamage(30);
     c.status();
     std::cout << std::endl;
 
     std::cout << "------------------------TEST 4------------------------" << std::endl;
-    d.status();
-    d.takeDamage(11);
-    d.attack("target3");
-    d.status();
-    d.beRepaired(5);
-    d.status();
-    d.takeDamage(3);
+    for (int i = 0; i < 50; i++)
+        d.attack("target4");
     d.status();
     std::cout << std::endl;
 
     std::cout << "------------------------TEST 5------------------------" << std::endl;
-    for (int i = 0; i < 10; i++)
-        a.attack("target4");
     a.status();
-    std::cout << std::endl;
-
-    std::cout << "------------------------TEST 6------------------------" << std::endl;
     a.attack("target4");
     a.beRepaired(5);
     a.takeDamage(3);
+    a.guardGate();
     a.status();
     std::cout << std::endl;
 
