@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 10:46:32 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/02/19 14:21:38 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/02/19 14:41:34 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,11 @@
 class Cat : public Animal
 {
 	public:
-        Cat(void);
-        Cat(const Cat &copy);
-        Cat& operator=(const Cat &copy);
-        ~Cat(void);
-        void makeSound(void) const;
+		Cat(void);
+		Cat(const Cat &copy);
+		Cat& operator=(const Cat &copy);
+		~Cat(void);
+		void makeSound(void) const;
 };
 
 #endif
-

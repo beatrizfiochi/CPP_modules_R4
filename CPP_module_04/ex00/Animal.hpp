@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 16:15:15 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/02/19 14:21:53 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/02/19 14:40:01 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,15 @@
 
 class Animal
 {
-    protected:
-        std::string type;
-    public:
-        Animal(void);
-        Animal(const Animal &copy);
-        Animal& operator=(const Animal &copy);
-        virtual ~Animal(void);
-        virtual void makeSound(void) const;
-        std::string getType(void) const;
+	protected:
+		std::string type;
+	public:
+		Animal(void);
+		Animal(const Animal &copy);
+		Animal& operator=(const Animal &copy);
+		virtual ~Animal(void);
+		virtual void makeSound(void) const;
+		std::string getType(void) const;
 };
 
 #endif

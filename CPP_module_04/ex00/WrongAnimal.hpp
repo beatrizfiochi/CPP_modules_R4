@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 11:19:35 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/02/19 14:22:33 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/02/19 14:43:09 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,15 @@
 
 class WrongAnimal
 {
-    protected:
-        std::string type;
-    public:
-        WrongAnimal(void);
-        WrongAnimal(const WrongAnimal &copy);
-        WrongAnimal& operator=(const WrongAnimal &copy);
-        ~WrongAnimal(void);
-        void makeSound(void) const;
-        std::string getType(void) const;
+	protected:
+		std::string type;
+	public:
+		WrongAnimal(void);
+		WrongAnimal(const WrongAnimal &copy);
+		WrongAnimal& operator=(const WrongAnimal &copy);
+		~WrongAnimal(void);
+		void makeSound(void) const;
+		std::string getType(void) const;
 };
 
 #endif

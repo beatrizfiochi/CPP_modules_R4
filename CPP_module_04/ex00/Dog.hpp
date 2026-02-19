@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 16:52:44 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/02/19 14:22:13 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/02/19 14:42:03 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@
 class Dog : public Animal
 {
 	public:
-        Dog(void);
-        Dog(const Dog &copy);
-        Dog& operator=(const Dog &copy);
-        ~Dog(void);
-        void makeSound(void) const;
+		Dog(void);
+		Dog(const Dog &copy);
+		Dog& operator=(const Dog &copy);
+		~Dog(void);
+		void makeSound(void) const;
 };
 
 #endif

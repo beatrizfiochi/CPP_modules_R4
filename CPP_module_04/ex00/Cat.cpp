@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 10:47:31 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/02/19 10:48:10 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/02/19 14:40:06 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 Cat::Cat(void) : Animal()
 {
 	std::cout << "Cat default constructor called" << std::endl;
-    this->type = "Cat";
+	this->type = "Cat";
 }
 
 Cat::Cat(const Cat &copy) : Animal(copy)
