@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/17 16:52:44 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/02/19 10:39:12 by bfiochi-         ###   ########.fr       */
+/*   Created: 2026/02/19 10:46:32 by bfiochi-          #+#    #+#             */
+/*   Updated: 2026/02/19 10:47:17 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
+#ifndef CAT_HPP
+# define CAT_HPP
 
 # include <iostream>
 # include <string>
 # include "Animal.hpp"
 
-class Dog : public Animal
+class Cat : public Animal
 {
 	public:
-        Dog(void);
-        Dog(const Dog &copy);
-        Dog& operator=(const Dog &copy);
-        ~Dog(void);
+        Cat(void);
+        Cat(const Cat &copy);
+        Cat& operator=(const Cat &copy);
+        ~Cat(void);
         void makeSound(void) const;
 };
 
