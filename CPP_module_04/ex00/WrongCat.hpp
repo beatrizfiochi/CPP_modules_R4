@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 11:22:17 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/02/19 11:23:14 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/02/19 14:23:28 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
 
 class WrongCat : public WrongAnimal
 {
-	public:
+    public:
         WrongCat(void);
         WrongCat(const WrongCat &copy);
         WrongCat& operator=(const WrongCat &copy);
-        ~WrongCat(void);
+        WrongCat(void);
         void makeSound(void) const;
 };
 
