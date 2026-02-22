@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 10:16:59 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/02/22 11:15:48 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/02/22 14:01:03 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,6 @@ void MyTests(void)
 	std::cout << "########## Destruct ##########" << std::endl;
 	delete me2;
 	delete src2;
-    std::cout << std::endl;
 }
 
 int main(void)
