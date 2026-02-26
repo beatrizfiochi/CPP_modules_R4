@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/25 19:08:33 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/02/25 19:51:11 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/02/26 10:44:20 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,63 +63,62 @@ int main(void)
         std::cout << error.what() << std::endl;
     }
 
-
     std::cout << "\n----------Copy assignment tests----------" << std::endl;
-	std::cout << "---Bureaucrats have same name---" << std::endl;
-	try
-	{
-		Bureaucrat	d("Dani", 50);
-		Bureaucrat	e("Dani", 100);
-		std::cout << "-Before assignment:\n" << d << e;
+    std::cout << "---Bureaucrats have same name---" << std::endl;
+    try
+    {
+        Bureaucrat d("Dani", 50);
+        Bureaucrat e("Dani", 100);
+        std::cout << "-Before assignment:\n" << d << e;
 
-		d = e;
-		std::cout << "-After assignment:\n" << d << e;
-	}
-	catch (std::exception const& error)
-	{
-		std::cout << "Exception: " << error.what() <<std::endl;
-	}
+        d = e;
+        std::cout << "-After assignment:\n" << d << e;
+    }
+    catch (std::exception const& error)
+    {
+        std::cout << "Exception: " << error.what() <<std::endl;
+    }
 
-	std::cout << "---Bureaucrats have different names---" << std::endl;
-	try
-	{
-		Bureaucrat	f("Fabiana", 120);
-		Bureaucrat	g("Goreti", 30);
-		std::cout << "-Before assignment:\n" << f << g;
+    std::cout << "---Bureaucrats have different names---" << std::endl;
+    try
+    {
+        Bureaucrat f("Fabiana", 120);
+        Bureaucrat g("Goreti", 30);
+        std::cout << "-Before assignment:\n" << f << g;
 
-		f = g;
-		std::cout << "-After assignment:\n" << f << g;
-	}
-	catch (std::exception const& error)
-	{
-		std::cout << "Exception: " << error.what() << std::endl;
-	}
+        f = g;
+        std::cout << "-After assignment:\n" << f << g;
+    }
+    catch (std::exception const& error)
+    {
+        std::cout << "Exception: " << error.what() << std::endl;
+    }
 
-	std::cout << "----------Increment overflow----------" << std::endl;
-	try
-	{
-		Bureaucrat	h("Heloisa", 1);
-		std::cout << "-Before increment:\n" << h;
-		h.increment();
-		std::cout << "After increment:\n" << h;
-	}
-	catch (std::exception const& error)
-	{
-		std::cout << "Exception: " << error.what() << std::endl;
-	}
+    std::cout << "----------Increment overflow----------" << std::endl;
+    try
+    {
+        Bureaucrat h("Heloisa", 1);
+        std::cout << "-Before increment:\n" << h;
+        h.increment();
+        std::cout << "After increment:\n" << h;
+    }
+    catch (std::exception const& error)
+    {
+        std::cout << "Exception: " << error.what() << std::endl;
+    }
 
-	std::cout << "----------Decrement overflow----------" << std::endl;
-	try
-	{
-		Bureaucrat	i("Ivana", 150);
-		std::cout << "-Before decrement:\n" << i;
-		i.decrement();
-		std::cout << "After decrement:\n" << i;
-	}
-	catch (std::exception const& error)
-	{
-		std::cout << "Exception: " << error.what() << std::endl;
-	}
+    std::cout << "----------Decrement overflow----------" << std::endl;
+    try
+    {
+        Bureaucrat i("Ivana", 150);
+        std::cout << "-Before decrement:\n" << i;
+        i.decrement();
+        std::cout << "After decrement:\n" << i;
+    }
+    catch (std::exception const& error)
+    {
+        std::cout << "Exception: " << error.what() << std::endl;
+    }
 
     return (0);
 }
