@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/25 10:52:55 by bfiochi-          #+#    #+#             */
-/*   Updated: 2026/02/25 18:53:25 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2026/02/26 11:37:24 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,6 @@ class Bureaucrat
         };
 };
 
-std::ostream &operator << (std::ostream &out, const Bureaucrat &fixed);
+std::ostream &operator << (std::ostream &out, const Bureaucrat &bureaucrat);
 
 #endif
