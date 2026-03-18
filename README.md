@@ -13,7 +13,7 @@ These modules introduce **Object-Oriented Programming in C++**, covering fundame
 
 ## 🧩 Modules Overview
 
-### 🔹 Module 00 — Basics of C++
+### 🔹 [Module 00](https://github.com/beatrizfiochi/CPP_modules_R4/tree/main/CPP_module_00) — Basics of C++
 
 - Namespaces  
 - Classes & Member Functions  
@@ -24,7 +24,7 @@ These modules introduce **Object-Oriented Programming in C++**, covering fundame
 
 ---
 
-### 🔹 Module 01 — Memory & References
+### 🔹 [Module 01](https://github.com/beatrizfiochi/CPP_modules_R4/tree/main/CPP_module_01) — Memory & References
 
 - Memory allocation (`new` / `delete`)  
 - References  
@@ -35,7 +35,7 @@ These modules introduce **Object-Oriented Programming in C++**, covering fundame
 
 ---
 
-### 🔹 Module 02 — Ad-hoc Polymorphism
+### 🔹 [Module 02](https://github.com/beatrizfiochi/CPP_modules_R4/tree/main/CPP_module_02) — Ad-hoc Polymorphism
 
 - Canonical form (Orthodox Canonical Class Form)  
 - Operator overloading  
@@ -45,7 +45,7 @@ These modules introduce **Object-Oriented Programming in C++**, covering fundame
 
 ---
 
-### 🔹 Module 03 — Inheritance
+### 🔹 [Module 03](https://github.com/beatrizfiochi/CPP_modules_R4/tree/main/CPP_module_03) — Inheritance
 
 - Inheritance  
 - Constructors & destructors  
@@ -56,7 +56,7 @@ These modules introduce **Object-Oriented Programming in C++**, covering fundame
 
 ---
 
-### 🔹 Module 04 — Subtype Polymorphism
+### 🔹 [Module 04](https://github.com/beatrizfiochi/CPP_modules_R4/tree/main/CPP_module_04) — Subtype Polymorphism
 
 - Polymorphism  
 - Virtual functions  
